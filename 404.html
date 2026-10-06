@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · Whitney Delyse Smith</title>
+<meta name="robots" content="noindex">
+<meta property="og:title" content="About · Whitney Delyse Smith">
+<meta property="og:description" content="I'm a creative strategist who connects brands to culture.">
+<meta property="og:image" content="https://whitneydelyse.com/img/8835a0e8f4e48b232f1c0cc91c263999.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/archivo.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/site.css">
+<style>
+.nav .links a[aria-current="page"]{color:var(--gold);text-decoration:underline;text-underline-offset:6px}
+.about-h1{padding:24px 0 0;font-weight:900;font-stretch:62%;font-size:min(380px,26.4vw);line-height:.82;letter-spacing:-.015em;text-transform:uppercase;color:var(--gold);text-align:center}
+
+/* intro */
+.intro{padding:96px var(--pad) 0;gap:64px;align-items:center}
+.portrait{position:relative}
+.portrait img{width:100%;height:720px;object-fit:cover;object-position:50% 20%;border-radius:4px;transform:rotate(-1.5deg);box-shadow:0 20px 40px rgba(58,15,18,.25)}
+.portrait .hi{position:absolute;right:-24px;bottom:36px;font-size:34px;transform:rotate(-6deg);background:var(--gold);padding:6px 18px;border-radius:4px;white-space:nowrap}
+.bio{display:flex;flex-direction:column;gap:28px}
+.bio .lead{font-family:var(--serif);font-style:italic;font-size:clamp(38px,4.17vw,60px);line-height:1.04}
+.bio p:not(.lead){font-size:clamp(17px,1.39vw,20px);line-height:1.6}
+
+/* substack band */
+.flip{margin-top:112px;background:var(--gold);padding:88px var(--pad) 104px;display:flex;flex-direction:column;gap:56px}
+.flip-head{gap:40px;align-items:end}
+.flip-title{display:flex;flex-direction:column;gap:12px}
+.flip-title .kicker{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.flip-title h2{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(76px,11.1vw,160px);line-height:.9;letter-spacing:-.02em}
+.flip-title .tagline{font-weight:900;font-stretch:75%;font-size:clamp(22px,2.36vw,34px);text-transform:uppercase;letter-spacing:.01em;line-height:1.05}
+.flip-cta{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.flip-cta p{font-size:18px;line-height:1.5}
+.sub-btn{background:var(--ox);color:var(--cream);text-decoration:none;padding:18px 28px;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.sub-btn:hover{background:var(--wine);color:var(--cream)}
+.browse{font-size:15px;font-weight:700;padding:8px 0}
+.posts{gap:32px}
+.post{background:#fff;color:var(--ox);text-decoration:none;border-radius:6px;padding:30px;display:flex;flex-direction:column;gap:14px;box-shadow:0 16px 32px rgba(58,15,18,.18);transition:transform .2s}
+.post.cream{background:var(--cream)}
+.post:hover{color:var(--ox)}
+.post .date{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--rose)}
+.post .ttl{font-family:var(--serif);font-size:clamp(28px,2.36vw,34px);line-height:1.08}
+.post .sub{font-size:15px;line-height:1.5;color:#5A2A2E}
+.post .go{margin-top:auto;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.r1{transform:rotate(-1.5deg)}.r2{transform:rotate(1deg)}.r3{transform:rotate(-1deg)}
+.post:hover{transform:rotate(0) translateY(-4px)}
+
+/* how I work */
+.how{padding:112px var(--pad) 0;display:flex;flex-direction:column;gap:32px}
+.how .card{border-radius:var(--radius);padding:36px;display:flex;flex-direction:column;gap:14px}
+.how .card .t{font-weight:900;font-stretch:62%;font-size:clamp(44px,4.45vw,64px);line-height:.9;text-transform:uppercase}
+.how .card .d{font-size:17px;line-height:1.5}
+
+/* path */
+.path{padding:112px var(--pad) 0;gap:40px}
+.path ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column}
+.path li{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:24px;padding:24px 0;border-top:1px solid var(--ox)}
+.path li:last-child{border-bottom:1px solid var(--ox)}
+.path li .t{grid-column:span 3;font-weight:900;font-stretch:62%;font-size:40px;line-height:1;text-transform:uppercase}
+.path li .d{grid-column:span 5;font-size:17px;line-height:1.5}
+
+/* brands */
+.brands{margin:112px var(--pad) 0;display:flex;flex-direction:column;gap:20px}
+.brands p{font-weight:900;font-stretch:62%;font-size:clamp(40px,5vw,72px);line-height:1;text-transform:uppercase}
+.after-brands{height:112px}
+
+@media (max-width:1024px){
+  .intro{gap:40px}
+  .portrait img{height:600px}
+  .portrait .hi{right:-8px;font-size:30px}
+  .flip-head .s8,.flip-head .s4{grid-column:1/-1}
+  .flip-head{gap:28px}
+  .posts{gap:20px}
+  .post{padding:22px}
+  .how .card{padding:28px}
+}
+@media (max-width:900px){
+  .intro,.path,.flip-head{grid-template-columns:minmax(0,1fr)}
+  .intro{padding-top:64px}
+  .portrait{max-width:560px;width:100%;justify-self:center}
+  .portrait img{height:auto;aspect-ratio:4/5}
+  .flip{margin-top:88px;padding:64px var(--pad) 72px;gap:40px}
+  .posts{grid-template-columns:minmax(0,1fr)}
+  .post .ttl{font-size:30px}
+  .r1,.r3{transform:rotate(-.5deg)}.r2{transform:rotate(.5deg)}
+  .how .cols3{grid-template-columns:minmax(0,1fr)}
+  .how,.path{padding-top:88px}
+  .path{gap:24px}
+  .brands{margin-top:88px}
+  .after-brands{height:88px}
+}
+@media (max-width:700px){
+  .about-h1{padding-top:12px}
+  .intro{padding-top:48px;gap:36px}
+  .portrait .hi{right:8px;bottom:20px;font-size:26px}
+  .flip{margin-top:64px;padding:52px var(--pad) 60px;gap:32px}
+  .flip-title .kicker{font-size:13px}
+  .flip-cta p{font-size:17px}
+  .sub-btn{align-self:stretch;text-align:center;padding:18px 20px}
+  .post{padding:24px}
+  .post .ttl{font-size:28px}
+  .r1,.r2,.r3{transform:none}
+  .how,.path{padding-top:64px}
+  .how{gap:24px}
+  .how .card{padding:24px}
+  .path li{grid-template-columns:minmax(0,1fr);gap:8px;padding:20px 0}
+  .path li .t,.path li .d{grid-column:auto}
+  .path li .t{font-size:34px}
+  .path li .d{font-size:16px}
+  .brands{margin-top:64px}
+  .after-brands{height:64px}
+}
+</style>
+<style>.nf{padding:120px var(--pad) 140px;display:flex;flex-direction:column;gap:28px;align-items:flex-start}</style>
+</head>
+<body>
+<div class="page">
+<header class="top">
+<nav class="nav" aria-label="Main">
+<a class="brand" href="/">Whitney Delyse</a>
+<div class="links">
+<a href="/#work">Work</a>
+<a href="/about/">About</a>
+<a href="https://flipsidebywhit.substack.com" target="_blank" rel="noopener">Substack</a>
+<a class="cta" href="#contact">Let's talk</a>
+</div>
+</nav>
+</header>
+<main class="nf">
+<h1 class="h-hero">Not<br>found</h1>
+<p class="dek">That page wandered off. The work is still right where it should be.</p>
+<a class="btn" href="/">Back to the homepage</a>
+</main>
+<footer class="footer" id="contact">
+<span class="big">Let's talk.</span>
+<div class="links">
+<a href="mailto:wdsmith1122@gmail.com">wdsmith1122@gmail.com</a>
+<a href="https://www.linkedin.com/in/whitneydsmith1" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://docs.google.com/document/d/1M2qHuFPSoKueWIUL6fcHE2FIn6Q889Xtm_iDmG9Anfg/export?format=pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+</div>
+</footer>
+</div>
+<script src="/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Roots · Whitney Delyse Smith</title>
+<meta name="description" content="Editorial and brand design taught me to make every inch of a page work: Brideside, Poppy, Dana Rebecca Designs, Social Sparkling Wine and editorial work.">
+<meta property="og:title" content="Design Roots · Whitney Delyse Smith">
+<meta property="og:description" content="Editorial and brand design taught me to make every inch of a page work: hierarchy, tension, white space, the relationship between image and type.">
+<meta property="og:image" content="https://whitneydelyse.com/img/9933e3904417b1840c2b9928652eb2ff.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/archivo.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/site.css">
+<style>
+.top{padding-bottom:80px}
+.intro{padding:48px var(--pad) 0;align-items:end}
+.intro .s7{display:flex;flex-direction:column;gap:28px}
+.intro h1{font-size:clamp(96px,16.7vw,240px)}
+.intro .lede{font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.36vw,34px);line-height:1.2}
+
+.archive{padding:96px var(--pad) 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:72px 48px}
+.archive article{display:flex;flex-direction:column;gap:14px;min-width:0}
+.archive .up{margin-top:-120px}.archive .down{margin-top:120px}
+.archive .full{grid-column:span 2}
+.archive h2{font-weight:900;font-stretch:62%;font-size:clamp(44px,4.45vw,64px);line-height:.95;text-transform:uppercase}
+.archive p{font-size:17px;line-height:1.5}
+.archive .imglink{display:block}
+.media{width:100%;height:400px;object-fit:cover;border-radius:var(--radius);display:block}
+
+/* sliders */
+.slider .swipe-frame{position:relative}
+.slider .swipe{border-radius:var(--radius);height:400px}
+.slider .swipe>img{width:100%;height:100%;object-fit:cover}
+.slider .swipe>.slide{position:relative;height:100%}
+.slider .slide img{width:100%;height:100%;object-fit:cover;background:#F4ECE6}
+.slide .cap{position:absolute;left:20px;top:20px;background:var(--ox);color:var(--cream);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600}
+.ed .swipe{height:460px}
+.slider .arrow{margin:0;padding:0} /* neutralise .next (next-project) rules on the arrow */
+.dots-host{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);border-radius:999px;background:rgba(251,243,220,.85);color:var(--ox);padding:0 6px;z-index:2}
+.dots-host:empty{display:none}
+.dots-host .dots{padding:10px 6px;gap:12px;align-items:center}
+.dots-host .dots button{position:relative;width:8px;height:8px}
+.dots-host .dots button::before{content:"";position:absolute;inset:-10px -6px}
+.dots-host .dots button[aria-current="true"]{width:20px}
+
+.ssw{height:400px;border-radius:var(--radius);background:#F4D9DF;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ssw img{height:384px;width:auto}
+.kpis{display:flex;gap:12px;flex-wrap:wrap}
+.kpi{background:var(--ox);color:var(--cream);border-radius:10px;padding:14px 18px;display:flex;flex-direction:column;gap:2px}
+.kpi b{font-weight:900;font-stretch:62%;font-size:40px;line-height:1;color:var(--gold)}
+.kpi span{font-size:13px}
+.next .lbl{display:flex;flex-direction:column;gap:8px}
+
+@media (max-width:900px){
+  .top{padding-bottom:56px}
+  .intro .s7{gap:20px}
+  .archive{grid-template-columns:minmax(0,1fr);gap:64px;padding-top:64px}
+  .archive .up,.archive .down{margin-top:0}
+  .archive .full{grid-column:auto}
+  .ed .swipe{height:auto;aspect-ratio:2.2/1}
+}
+@media (max-width:700px){
+  .top{padding-bottom:44px}
+  .intro{padding-top:28px}
+  .archive{padding-top:48px;gap:56px}
+  .archive p{font-size:16px}
+  .media{height:auto;aspect-ratio:4/3}
+  .slider .swipe{height:auto;aspect-ratio:1264/800}
+  .ed .swipe{aspect-ratio:2/1}
+  .slide .cap{left:12px;top:12px;font-size:12px;padding:6px 12px}
+  .dots-host{bottom:10px}
+  .ssw{height:360px}.ssw img{height:344px}
+  .kpi{flex:1 1 140px}.kpi b{font-size:34px;white-space:nowrap}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="page">
+
+<header class="top">
+<nav class="nav" aria-label="Main">
+<a class="brand" href="/">Whitney Delyse</a>
+<div class="links">
+<a href="/#work">Work</a>
+<a href="/about/">About</a>
+<a href="https://flipsidebywhit.substack.com" target="_blank" rel="noopener">Substack</a>
+<a class="cta" href="#contact">Let's talk</a>
+</div>
+</nav>
+<div class="intro g12">
+<div class="s7">
+<a class="back" href="/">← All work</a>
+<h1 class="h-hero">Design<br>Roots</h1>
+</div>
+<p class="s5 lede">Editorial and brand design taught me to make every inch of a page work: hierarchy, tension, white space, the relationship between image and type.</p>
+</div>
+</header>
+
+<main id="main">
+<section class="archive">
+
+<article>
+<a class="imglink" href="/brideside-system/"><img class="media" src="/img/3153bc05c0ab9445a1ca50971d95dae3.webp" alt="Perfect pairings email from the Brideside brand system" style="object-position:50% 0%" width="640" height="2773" loading="lazy" decoding="async"></a>
+<h2>Brideside</h2>
+<p>I led creative across three expressions of Brideside for 250K email subscribers and 200K social followers, and used paid social as a research tool to learn what the customer responded to. The system and the bridal launch each have their own case study: <a href="/brideside-system/">Brand to System</a> and <a href="/brideside-bride/">Brideside BRIDE</a>.</p>
+<div class="tags"><span class="pill">Multi-Brand Management</span><span class="pill">Paid Social</span></div>
+</article>
+
+<article class="down">
+<div class="slider" data-label="image"><div class="swipe-frame"><div class="swipe">
+<img src="/img/9933e3904417b1840c2b9928652eb2ff.webp" alt="Poppy brand book spread: You want it, you got it" style="object-position:50% 50%;background:#F2A7C3" width="1264" height="800" loading="lazy" decoding="async">
+<img src="/img/1471ca907ac5283cfc13f7914d2ecf75.webp" alt="Poppy launch Instagram stories" style="object-position:50% 40%;background:#EBDDF2" width="1264" height="800" loading="lazy" decoding="async">
+<img src="/img/6cd83f9849904ed1d3785aa3ba3c1876.webp" alt="Poppy launch email" style="object-position:50% 20%;background:#EBDDF2" width="1264" height="800" loading="lazy" decoding="async">
+<img src="/img/4f3ae2d718bb0cad9a34935207be9323.webp" alt="Meet Poppy landing page on brideside.com" style="object-position:50% 2%;background:#EBDDF2" width="1264" height="800" loading="lazy" decoding="async">
+</div><div class="dots-host"></div></div></div>
+<h2>Poppy by Brideside</h2>
+<p>An affordable sub-brand that had to feel like a sibling, not a knockoff. I built the logo, color system, voice and style guide, then the landing page, launch emails and social.</p>
+<div class="tags"><span class="pill">Brand Identity</span><span class="pill">Launch</span></div>
+</article>
+
+<article class="up">
+<div class="slider" data-label="image"><div class="swipe-frame"><div class="swipe">
+<img src="/img/b1c19be1ae622435db4449cddd9166d4.webp" alt="Dana Rebecca emails: Celeb-approved and Personalize it" style="background:#F7EFEB" width="1264" height="800" loading="lazy" decoding="async">
+<img src="/img/0466b3da4a4894dedaf821f6f0bdc7c0.webp" alt="Dana Rebecca emails: Get what you really want and It's not too late" style="background:#F7EFEB" width="1264" height="800" loading="lazy" decoding="async">
+<img src="/img/f813ebfbbb10b54658d224af7c7ace57.webp" alt="Dana Rebecca emails: Layered to perfection and For the love of gold" style="background:#F7EFEB" width="1264" height="800" loading="lazy" decoding="async">
+</div><div class="dots-host"></div></div></div>
+<h2>Dana Rebecca Designs</h2>
+<p>Took email from 4–5 sends a month to 2–3 a week without burning the list, each one with a reason to exist. Also art directed in-house shoots with Hallie Duesenberg.</p>
+<div class="tags"><span class="pill">Email Strategy</span><span class="pill">Art Direction</span></div>
+</article>
+
+<article>
+<div class="ssw"><img src="/img/e13a1c5bdac921fbcc732000e497cd49.webp" alt="The Social Sparkling Wine Instagram feed on a phone, cycling through posts" width="432" height="800" loading="lazy" decoding="async"></div>
+<h2>Social Sparkling Wine</h2>
+<p>A one-person creative department. I built the brand's social presence from the ground up, with a feed designed to make people stop and stay. I ran the account and creative directed the photography and design.</p>
+<div class="kpis"><div class="kpi"><b>3K → 12K+</b><span>followers</span></div><div class="kpi"><b>400%+</b><span>engagement growth</span></div></div>
+<div class="tags"><span class="pill">Content Strategy</span><span class="pill">Art Direction</span></div>
+</article>
+
+<article class="full">
+<div class="slider ed" data-label="image"><div class="swipe-frame"><div class="swipe">
+<div class="slide"><img src="/img/e875b9c9dba137f7df78587301ca4e08.webp" alt="Suki + Solaine lookbook spreads: Philea, Triple threat, When and wear" width="1968" height="690" loading="lazy" decoding="async"><span class="cap">Suki + Solaine Fall 2017 lookbook</span></div>
+<div class="slide"><img src="/img/34209d9599ec43d0266435cdd734b4e6.webp" alt="TrailBlazer Magazine covers with opening spreads" width="1968" height="690" loading="lazy" decoding="async"><span class="cap">TrailBlazer Magazine</span></div>
+<div class="slide"><img src="/img/8af237e548d45f3f417ca13e92543f4a.webp" alt="TrailBlazer spreads: The mountains are calling and The Overseas Highway" width="1968" height="690" loading="lazy" decoding="async"><span class="cap">TrailBlazer Magazine</span></div>
+<div class="slide"><img src="/img/23c15ee973b757605cf2a31310b83e40.webp" alt="Modern Luxury Interiors Spring Trend Watch special promotion spreads" width="1968" height="690" loading="lazy" decoding="async"><span class="cap">Modern Luxury</span></div>
+<div class="slide"><img src="/img/0ec7bcf878027436999075fbfecd99b3.webp" alt="Modern Luxury pages: Giorgio Armani, MiaCucina ad and Gala Glam" width="1968" height="690" loading="lazy" decoding="async"><span class="cap">Modern Luxury</span></div>
+<div class="slide"><img src="/img/e4f9b3085be302d099196bdf394dc4dc.webp" alt="Modern Luxury ads for Eden Roc and Perfect Petals" width="1968" height="690" loading="lazy" decoding="async"><span class="cap">Modern Luxury</span></div>
+</div><div class="dots-host"></div></div></div>
+<h2>Editorial Design</h2>
+<p>Special promotion spreads, features and ads for Modern Luxury, art direction for TrailBlazer Magazine, and the Suki + Solaine Fall 2017 lookbook, produced end to end.</p>
+<div class="tags"><span class="pill">Editorial Design</span><span class="pill">Print</span></div>
+</article>
+</section>
+
+<a class="next" href="/">
+<span class="lbl"><span class="eyebrow">Back to</span><span class="title">Selected work</span></span>
+<span class="arrow" aria-hidden="true">→</span>
+</a>
+</main>
+
+<footer class="footer" id="contact">
+<span class="big">Let's talk.</span>
+<div class="links">
+<a href="mailto:wdsmith1122@gmail.com">wdsmith1122@gmail.com</a>
+<a href="https://www.linkedin.com/in/whitneydsmith1" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://docs.google.com/document/d/1M2qHuFPSoKueWIUL6fcHE2FIn6Q889Xtm_iDmG9Anfg/export?format=pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+</div>
+</footer>
+
+</div>
+<script src="/site.js" defer></script>
+</body>
+</html>

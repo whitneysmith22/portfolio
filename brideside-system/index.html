@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brideside: Brand to System · Whitney Delyse Smith</title>
+<meta name="description" content="I inherited a logo, a couple of typefaces and one blue. I left behind a system that made every Brideside email and ad look like the same brand.">
+<meta property="og:title" content="Brideside: Brand to System · Whitney Delyse Smith">
+<meta property="og:description" content="I inherited a logo, a couple of typefaces and one blue. I left behind a system that made every email and ad look like the same brand.">
+<meta property="og:image" content="https://whitneydelyse.com/img/1da2da8d241b5a6433d2bf955c11145b.webp">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/archivo.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/site.css">
+<style>
+.top{padding-bottom:72px}
+.cs-title{font-weight:900;font-stretch:62%;font-size:clamp(60px,13.9vw,200px);line-height:.86;letter-spacing:-.015em;text-transform:uppercase;color:var(--gold)}
+.cs-head .dek{max-width:1000px}
+
+/* hero collage */
+.stage{position:relative;width:100%}
+.stage-inner{position:absolute;left:0;top:0;transform-origin:0 0}
+.stage-inner>*{position:absolute}
+.hero-stage{margin-top:56px}
+.hero-stage img{width:250px;height:344px;object-fit:cover;object-position:50% 0;border-radius:3px;box-shadow:0 16px 32px rgba(0,0,0,.35)}
+
+.sec{padding:112px var(--pad) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+.sec-head p{max-width:440px;font-size:17px;line-height:1.5}
+.sec-head p.w480{max-width:480px}
+.note{font-family:var(--hand);font-weight:600;font-size:30px}
+.challenge p{font-size:22px;line-height:1.55}
+
+/* palette */
+.pal{padding-top:96px;gap:24px;align-items:stretch}
+.card{background:#fff;border-radius:var(--radius);padding:36px;display:flex;flex-direction:column}
+.inherit{gap:24px}
+.inherit .logo{font-family:Georgia,'Times New Roman',serif;font-size:56px;letter-spacing:-.02em;color:#272A30}
+.inherit .faces{font-size:22px;font-weight:500;letter-spacing:.02em}
+.sw{display:block;height:110px;border-radius:10px}
+.inherit .hand{font-size:28px;transform:rotate(-2deg);align-self:flex-start}
+.built{gap:28px}
+.swatches{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.swatches>div,.season>div{display:flex;flex-direction:column;gap:8px}
+.swatches .sw{border:1px solid rgba(58,15,18,.12)}
+.sm{font-size:14px;font-weight:600}
+.blk{display:flex;flex-direction:column;gap:10px}
+.irid{display:block;height:40px;border-radius:999px;background:linear-gradient(90deg,#BDE3E4,#C9B7EA,#EAB6D3,#FCF2B3)}
+.season{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.season>div{gap:6px}
+.season .pillsw{display:block;height:56px;border-radius:999px}
+.season span:last-child{font-size:13px}
+.typo{display:flex;align-items:baseline;gap:12px 28px;flex-wrap:wrap;border-top:1px solid #EADCE0;padding-top:24px}
+.typo .bold{font-weight:800;font-size:56px;letter-spacing:-.02em;text-shadow:4px 4px 0 #EAB6D3,8px 8px 0 #BDE3E4}
+.typo .hand{font-size:40px}
+
+/* devices */
+.devices{display:flex;flex-direction:column;gap:32px}
+.dev{background:#fff;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.dev .pic{height:250px;background:#F4F0F2;display:flex;align-items:center;justify-content:center;padding:16px}
+.dev .pic img{max-width:100%;max-height:218px;object-fit:contain;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+.dev .txt{padding:22px 24px 26px;display:flex;flex-direction:column;gap:8px}
+.dev .t{font-weight:900;font-stretch:75%;font-size:26px;line-height:1;text-transform:uppercase}
+.dev .d{font-size:15px;line-height:1.5}
+
+/* modules */
+.modules{display:flex;flex-direction:column;gap:40px}
+.mod-grid{gap:40px;align-items:start}
+.anno{position:relative;margin-left:22px;min-width:0}
+.mod-grid>*{min-width:0}
+.anno img{width:100%;height:auto;border-radius:4px;box-shadow:0 14px 30px rgba(58,15,18,.2)}
+.anno .n{position:absolute;left:-22px;width:44px;height:44px;border-radius:50%;background:var(--rose);color:#fff;border:4px solid #fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;box-shadow:0 16px 32px rgba(0,0,0,.35)}
+.mod-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:28px}
+.mod-list li{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}
+.mod-list .b{width:36px;height:36px;border-radius:50%;background:var(--rose);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.mod-list .c{display:flex;flex-direction:column;gap:4px}
+.mod-list .t{font-weight:900;font-stretch:75%;font-size:24px;text-transform:uppercase}
+.mod-list .d{font-size:15px;line-height:1.5}
+.same{display:flex;flex-direction:column;gap:16px}
+.same .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.same img{width:100%;height:auto;border-radius:4px;box-shadow:0 10px 24px rgba(58,15,18,.18)}
+
+/* email wall */
+.wall-sec{padding:112px 0 0;display:flex;flex-direction:column;gap:32px}
+.wall-sec .sec-head{padding:0 var(--pad)}
+.wall{display:flex;gap:24px;overflow-x:auto;padding:8px var(--pad) 40px;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scroll-padding:0 var(--pad)}
+.wall::-webkit-scrollbar{display:none}
+.wall:focus-visible{outline:2px solid var(--ox);outline-offset:-2px}
+.wall img{flex:0 0 220px;width:220px;height:auto;align-self:flex-start;border-radius:4px;box-shadow:0 10px 24px rgba(58,15,18,.15)}
+
+/* beyond email */
+.beyond{padding-top:88px;display:flex;flex-direction:column;gap:32px}
+.ads{display:flex;gap:24px;align-items:flex-end;justify-content:center;max-width:1175px;margin:0 auto;width:100%}
+.ads img{min-width:0;width:100%;height:auto;box-shadow:0 14px 30px rgba(58,15,18,.18)}
+.ads .a1{flex:420 1 0;border-radius:8px;transform:rotate(-1.5deg)}
+.ads .a2{flex:392 1 0;border-radius:8px;transform:rotate(1.5deg)}
+.ads .a3{flex:315 1 0;border-radius:16px}
+.ad-tile{height:304px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ad-tile img{max-width:100%;max-height:100%;object-fit:contain}
+
+/* creative as research */
+.research{gap:40px;align-items:center}
+.research .copy{display:flex;flex-direction:column;gap:20px}
+.research .copy>p{font-size:20px;line-height:1.55}
+.learned{display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--ox);padding-top:20px}
+.learned p{font-size:18px;line-height:1.5}
+.tests .swipe-frame{position:relative}
+.test{display:flex;flex-direction:column;gap:16px;margin:0}
+.test .cap{background:#fff;border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:6px}
+.test .k{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--rose)}
+.test .v{font-weight:900;font-stretch:75%;font-size:30px;line-height:1.05;text-transform:uppercase}
+.test .shot{height:620px;border-radius:var(--radius);overflow:hidden;background:#E9E6E3}
+.test .shot img{width:100%;height:100%;object-fit:contain}
+.tests .arrow{width:64px;height:64px;margin:0;padding:0;background:var(--ox);color:var(--cream);font-size:26px;box-shadow:0 8px 20px rgba(0,0,0,.25);top:auto;bottom:278px;transform:none}
+.tests .arrow.prev{left:16px}.tests .arrow.next{right:16px}
+.tests .arrow:hover{background:var(--wine)}
+.tests .dots-host{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:2}
+.tests .dots{padding:11px 14px;gap:12px;border-radius:999px;background:rgba(251,243,220,.92);align-items:center}
+.tests .dots button{color:var(--ox);opacity:1;background:#C99AA6;position:relative}
+.tests .dots button[aria-current="true"]{background:var(--ox);width:22px}
+.tests .dots button::after{content:"";position:absolute;inset:-11px -6px}
+
+.reach{display:flex;flex-direction:column;gap:32px}
+.next .lbl{display:flex;flex-direction:column;gap:8px}
+
+@media (max-width:1024px){
+  .sec{padding-top:88px}
+  .test .shot{height:520px}
+  .tests .arrow{bottom:228px}
+  .ads{gap:16px}
+}
+@media (max-width:900px){
+  .pal .card{grid-column:1/-1}
+  .mod-grid{grid-template-columns:minmax(0,1fr);gap:40px}
+  .anno{max-width:440px}
+  .same{max-width:560px}
+  .research{gap:32px}
+}
+@media (max-width:900px) and (min-width:601px){
+  .mod-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 32px}
+  .mod-grid>.anno{grid-column:1}
+  .mod-grid>.s4:nth-child(2){grid-column:2}
+  .reach .cols3{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .reach .stat{padding:24px}
+}
+@media (max-width:900px){
+  .sec-head{flex-direction:column;align-items:flex-start;gap:16px}
+}
+@media (max-width:760px){
+  .sec-head{flex-direction:column;align-items:flex-start;gap:16px}
+  .cols4.ads-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:700px){
+  .top{padding-bottom:40px}
+  .hero-stage{margin-top:36px;height:auto!important}
+  .hero-stage .stage-inner{position:static;transform:none!important;width:auto!important;height:auto!important;display:flex;flex-wrap:wrap;justify-content:center;padding:0 var(--pad)}
+  .hero-stage .stage-inner>img{position:static;width:36%;height:auto;aspect-ratio:250/344;margin:0 -2%}
+  .hero-stage .stage-inner>img:nth-child(n+4){margin-top:-10%}
+  .sec{padding-top:72px}
+  .wall-sec{padding-top:72px;gap:20px}
+  .challenge p{font-size:18px}
+  .card{padding:24px}
+  .inherit .logo{font-size:44px}
+  .inherit .faces{font-size:18px}
+  .swatches{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .season{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .typo .bold{font-size:38px}
+  .typo .hand{font-size:32px}
+  .dev .pic{height:220px}
+  .dev .pic img{max-height:188px}
+  .note{font-size:26px}
+  .wall{gap:16px;padding-bottom:28px}
+  .wall img{flex-basis:180px;width:180px}
+  .beyond{padding-top:72px}
+  .ads{display:grid;grid-template-columns:420fr 392fr;gap:16px 12px;align-items:end}
+  .ads .a3{grid-column:1/-1;width:62%;justify-self:center}
+  .ads-grid{gap:12px}
+  .ad-tile{height:200px}
+  .research .copy>p{font-size:17px}
+  .learned p{font-size:16px}
+  .test .v{font-size:24px}
+  .test .cap{padding:20px}
+  .test .shot{height:auto;aspect-ratio:820/699}
+  .tests .dots{padding:9px 12px;gap:10px}
+  .tests .dots button::after{inset:-9px -5px}
+  .tests .dots-host{bottom:10px}
+  .tests .arrow{bottom:calc((100vw - 40px) * .4262 - 32px)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="page">
+
+<header class="top">
+<nav class="nav" aria-label="Main">
+<a class="brand" href="/">Whitney Delyse</a>
+<div class="links">
+<a href="/#work">Work</a>
+<a href="/about/">About</a>
+<a href="https://flipsidebywhit.substack.com" target="_blank" rel="noopener">Substack</a>
+<a class="cta" href="#contact">Let's talk</a>
+</div>
+</nav>
+<div class="cs-head">
+<a class="back" href="/">&larr; All work</a>
+<div class="tags"><span class="pill">Brand System</span><span class="pill">Email Design</span><span class="pill">Paid Social</span><span class="pill">Creative Testing</span></div>
+<h1 class="cs-title">Brideside:<br>Brand to System</h1>
+<p class="dek">I inherited a logo, a couple of typefaces and one blue. I left behind a system that made every email and ad look like the same brand.</p>
+</div>
+<div class="meta">
+<div><span class="label">Client</span><span>Brideside</span></div>
+<div><span class="label">My role</span><span>Creative lead across three sub-brands</span></div>
+<div><span class="label">Channels</span><span>Email, Facebook, Instagram, Pinterest</span></div>
+<div><span class="label">Year</span><span>2019–2020</span></div>
+</div>
+<div class="stage hero-stage" data-w="1440" data-h="420" data-w-narrow="1300" data-h-narrow="420">
+<div class="stage-inner">
+<img src="/img/34ed9cff45be779c2169a8372ba43d58.webp" alt="Nouvelle Amsale trunk show email" style="left:64px;top:10px;transform:rotate(-6deg)">
+<img src="/img/1da2da8d241b5a6433d2bf955c11145b.webp" alt="Set your tone email" style="left:300px;top:40px;transform:rotate(4deg)">
+<img src="/img/519c843fa3a79ad856d8524556626ea0.webp" alt="Buy now, pay later email" style="left:540px;top:10px;transform:rotate(-3deg)">
+<img src="/img/9c1b788fae980a22199a882bc2eff52b.webp" alt="Your celebration starts now email" style="left:780px;top:40px;transform:rotate(5deg)">
+<img src="/img/3214d9e61a092f03344cc745ca54ddc8.webp" alt="High tide email" style="left:1010px;top:10px;transform:rotate(-4deg)">
+</div>
+</div>
+</header>
+
+<main id="main">
+<section class="sec g12 challenge">
+<div class="s4"><h2 class="h-section">The challenge</h2></div>
+<p class="s7">Brideside had loose brand guidelines: a logo, typefaces and one brand blue. With three expressions of the brand (Brideside, the Poppy sub-brand and the Brideside BRIDE bridal line), weekly sends and always-on paid social, there was nothing to keep the creative consistent or fast to produce.</p>
+</section>
+
+<section class="sec pal g12" aria-label="Brand palette">
+<div class="card inherit s4">
+<span class="eyebrow">What I inherited</span>
+<span class="logo">Brideside</span>
+<span class="faces">Aa · the brand typefaces</span>
+<span class="sw" style="background:#0147AF"></span>
+<span class="hand">...and that was about it</span>
+</div>
+<div class="card built s8">
+<span class="eyebrow">What I built</span>
+<div class="swatches">
+<div><span class="sw" style="background:#0147AF"></span><span class="sm">Brideside cobalt</span></div>
+<div><span class="sw" style="background:#272A30"></span><span class="sm">Charcoal</span></div>
+<div><span class="sw" style="background:#EAF0F5"></span><span class="sm">Mist</span></div>
+<div><span class="sw" style="background:#F7E6DF"></span><span class="sm">Blush</span></div>
+</div>
+<div class="blk"><span class="sm">Iridescent accent</span><span class="irid"></span></div>
+<div class="blk"><span class="sm">Seasonal palettes that rotate in</span>
+<div class="season">
+<div><span class="pillsw" style="background:#C98D72"></span><span>Terracotta</span></div>
+<div><span class="pillsw" style="background:#EDC46A"></span><span>Marigold</span></div>
+<div><span class="pillsw" style="background:#93AE95"></span><span>Sage</span></div>
+<div><span class="pillsw" style="background:#CF8F95"></span><span>Dusty rose</span></div>
+<div><span class="pillsw" style="background:#6B3A63"></span><span>Jewel plum</span></div>
+</div></div>
+<div class="typo"><span class="bold">bold lowercase</span><span class="hand">+ a script accent</span></div>
+</div>
+</section>
+
+<section class="sec devices">
+<div class="sec-head"><h2 class="h-section">The signature devices</h2><p>A small kit of repeatable moves. Any designer could combine them and still land on-brand.</p></div>
+<div class="cols3">
+<div class="dev"><div class="pic"><img src="/img/218eedd788f50a306431d02d1eac9dad.webp" alt="buy now, pay later headline with pastel shadow" loading="lazy"></div><div class="txt"><span class="t">Echo type</span><span class="d">Bold lowercase headlines with offset pastel shadows. Instantly recognizable, even as a thumbnail.</span></div></div>
+<div class="dev"><div class="pic"><img src="/img/6b126d79ac224852dc7ca78a43e764a7.webp" alt="we got you heading with gradient highlight" loading="lazy"></div><div class="txt"><span class="t">Highlighter bars</span><span class="d">The iridescent gradient, swiped under headings and buttons.</span></div></div>
+<div class="dev"><div class="pic"><img src="/img/29face7a19d8437083efdf04d841695e.webp" alt="delicate details module with vertical label" loading="lazy"></div><div class="txt"><span class="t">Sideways labels</span><span class="d">Rotated section labels that turn any module into a chapter.</span></div></div>
+<div class="dev"><div class="pic"><img src="/img/bcbdcc18012200987c350e635a9fbe09.webp" alt="go bold module with offset color blocks" loading="lazy"></div><div class="txt"><span class="t">Offset color blocks + name tags</span><span class="d">Photos layered on seasonal color blocks, with the product name tagged right on the image.</span></div></div>
+<div class="dev"><div class="pic"><img src="/img/0f6ba1002f7f235b404a59e541bd52fa.webp" alt="taped photo with fabric swatches" loading="lazy"></div><div class="txt"><span class="t">Taped, tilted photos</span><span class="d">A scrapbook touch for softer, editorial moments.</span></div></div>
+<div class="dev"><div class="pic"><img src="/img/316a15df6c7ce077be77c09eb43656c5.webp" alt="dark Total Package footer module" loading="lazy"></div><div class="txt"><span class="t">The Total Package footer</span><span class="d">A dark closing module that carried the offer in every bridal send.</span></div></div>
+</div>
+</section>
+
+<section class="sec modules">
+<div class="sec-head"><h2 class="h-section">Built from modules</h2><p>Every email was assembled from the same parts, so a new campaign meant new content, not a new design.</p></div>
+<div class="g12 mod-grid">
+<div class="s4 anno"><img src="/img/3153bc05c0ab9445a1ca50971d95dae3.webp" alt="Perfect pairings email" loading="lazy"><span class="n" style="top:7%" aria-hidden="true">1</span><span class="n" style="top:33%" aria-hidden="true">2</span><span class="n" style="top:51%" aria-hidden="true">3</span><span class="n" style="top:84%" aria-hidden="true">4</span><span class="n" style="top:95%" aria-hidden="true">5</span></div>
+<div class="s4"><ol class="mod-list">
+<li><span class="b" aria-hidden="true">1</span><span class="c"><span class="t">Hero</span><span class="d">A full-bleed image, the headline in the brand type, one clear call to action.</span></span></li>
+<li><span class="b" aria-hidden="true">2</span><span class="c"><span class="t">Pairing module</span><span class="d">Gown + bridesmaid, a sideways label, offset color blocks and product tags. Built to swap in any two products.</span></span></li>
+<li><span class="b" aria-hidden="true">3</span><span class="c"><span class="t">Mirrored module</span><span class="d">The same module flipped, so a long email keeps its rhythm without repeating itself.</span></span></li>
+<li><span class="b" aria-hidden="true">4</span><span class="c"><span class="t">Mid-email CTA</span><span class="d">A reminder of the offer before the close.</span></span></li>
+<li><span class="b" aria-hidden="true">5</span><span class="c"><span class="t">Total Package footer</span><span class="d">The standing offer, in the same dark module every time.</span></span></li>
+</ol></div>
+<div class="s4 same">
+<span class="note">same modules, new story &rarr;</span>
+<div class="pair">
+<img src="/img/3051d979efd4cd9e3b81e1b7ba9fde24.webp" alt="Set your tone email" loading="lazy">
+<img src="/img/8993295cf18874cb0f5e3d25056551c6.webp" alt="Finishing touches email" loading="lazy">
+</div></div>
+</div>
+</section>
+
+<section class="wall-sec">
+<div class="sec-head"><h2 class="h-section">One system, every send</h2><span class="note" aria-hidden="true">swipe the wall &rarr;</span></div>
+<div class="wall" tabindex="0" role="region" aria-label="Email wall, scroll horizontally">
+<img src="/img/ee57ce3412f65169ffad694085b8b39b.webp" alt="Nouvelle Amsale trunk show email" loading="lazy">
+<img src="/img/f13feb99b094240959f18afad349c41f.webp" alt="Feeling this email" loading="lazy">
+<img src="/img/8b557abd37eda7bf18137b080a1be354.webp" alt="Gilded autumn email" loading="lazy">
+<img src="/img/61e51ccdf480221329524c54778e01cd.webp" alt="15% off, hello fall email" loading="lazy">
+<img src="/img/1216739925420eb47a52f620f4543619.webp" alt="By popular demand email" loading="lazy">
+<img src="/img/65c2b408c022bd180e9d822a9d7472f9.webp" alt="Sedona sunlight email" loading="lazy">
+<img src="/img/2fae562e411e4c72c788fa78b7a0b36c.webp" alt="High tide email" loading="lazy">
+<img src="/img/6710116176dd0b0d4fd5138926c89647.webp" alt="All that glitters email" loading="lazy">
+<img src="/img/c28ef7ea16fc79db528973a83ea6318c.webp" alt="Jewels of the trade email" loading="lazy">
+<img src="/img/4c9baf06efeea14484be980c67f980ae.webp" alt="New + now email" loading="lazy">
+<img src="/img/7cf9f89d88b762cff2da7580c726f61f.webp" alt="Private parties email" loading="lazy">
+<img src="/img/c635605c29ddf7b4989e33711bc4310c.webp" alt="Build your own dream dress email" loading="lazy">
+<img src="/img/9c093168b05998e2758c37f539714862.webp" alt="Dresses worth a double take email" loading="lazy">
+<img src="/img/53375ba12fdd470808d250e9b24b0417.webp" alt="All the feels email" loading="lazy">
+<img src="/img/11debdf08e8e286fadb69fce1ba94cbe.webp" alt="20% off, Brideside and Aura email" loading="lazy">
+<img src="/img/c06e29f7c6f61a085000e297d80d8188.webp" alt="Get ready email" loading="lazy">
+<img src="/img/3e2ba6cccf142ec9d2eb21924694214f.webp" alt="Your celebration starts now email" loading="lazy">
+<img src="/img/b62b96a99654dd65a4fc15e29fe83301.webp" alt="Buy now, pay later email" loading="lazy">
+<img src="/img/7db7504ca1092318f561964904950539.webp" alt="Set your tone email" loading="lazy">
+<img src="/img/9f05d9147de5cc4b6095b54778c17afa.webp" alt="Finishing touches email" loading="lazy">
+<img src="/img/4c9ee57d6e90f2f3016ffa86ce7d7935.webp" alt="Perfect pairings email" loading="lazy">
+</div>
+</section>
+
+<section class="sec beyond">
+<div class="sec-head"><h2 class="h-section">Beyond email</h2><p class="w480">The system carried onto Facebook, Instagram and Pinterest. One "See yourself at" template served both the bridesmaid and bridal businesses with a simple color swap.</p></div>
+<div class="ads">
+<img class="a1" src="/img/b624a1ce18f78406aff406b0f8d2a3e8.webp" alt="See yourself at Brideside Bridesmaid Facebook ad" loading="lazy">
+<img class="a2" src="/img/ade768043ee8f7802e4563602dcf9fa7.webp" alt="See yourself at Brideside Bride Facebook ad" loading="lazy">
+<img class="a3" src="/img/5e4bbcd3166ecdebeefe9a3f315d1b9f.gif" alt="Surprise sale animated Instagram story" loading="lazy">
+</div>
+<div class="cols4 ads-grid">
+<div class="ad-tile"><img src="/img/c408f84a6688ef57da3199af1c639cb5.webp" alt="20% off Jenny Yoo ad" loading="lazy"></div>
+<div class="ad-tile"><img src="/img/4096c5933eb1d7cb4c771e04844c7612.gif" alt="$119 bridesmaid dresses animated ad" loading="lazy"></div>
+<div class="ad-tile"><img src="/img/9c17820f3a6dd40622bad7a1f3a475ea.gif" alt="Exclusive styles, all for $150 animated ad" loading="lazy"></div>
+<div class="ad-tile"><img src="/img/68773ef3bd68dc06a2ac1dd645121996.webp" alt="Bridal shopping worth celebrating ad" loading="lazy"></div>
+<div class="ad-tile"><img src="/img/ce4ca0d38cbea3e0638c97309bb00180.webp" alt="Free wedding planning guide ad" loading="lazy"></div>
+<div class="ad-tile"><img src="/img/a1597c9264997c85031683facf150a20.webp" alt="3 free swatches Facebook ad" loading="lazy"></div>
+<div class="ad-tile"><img src="/img/2591c18d99e889f1144c4222024075cb.webp" alt="Spiced reds fall trend Facebook ad" loading="lazy"></div>
+<div class="ad-tile"><img src="/img/6853b3ad522c314a1a36765f8e2f1064.webp" alt="Exclusive bridesmaid styles under $200 ad" loading="lazy"></div>
+</div>
+</section>
+
+<section class="sec g12 research">
+<div class="s5 copy">
+<h2 class="h-section">Creative as research</h2>
+<p>Paid social was as much a research tool as a performance channel. Because the system held everything else constant, each test isolated one variable, from the offer and the hook to the color story and the gown in the photo.</p>
+<p>The insights shaped more than the ads. They informed how we understood the Brideside customer and what she responded to, emotionally and aesthetically.</p>
+<div class="learned">
+<span class="eyebrow">What we learned</span>
+<p><strong>Brides and bridesmaids buy for different reasons.</strong> The value props that moved one audience didn't always move the other.</p>
+<p><strong>Taste has a map and an age.</strong> Affinities for certain styles and designers shifted by region and age, so we could match the right products to the right audiences.</p>
+</div>
+</div>
+<div class="s7 slider tests" data-label="test" role="region" aria-label="Paid social tests">
+<div class="swipe-frame">
+<div class="swipe">
+<figure class="test"><figcaption class="cap"><span class="k">Test 1 of 8 · Value prop</span><span class="v">Discount vs. gift with purchase</span></figcaption><div class="shot"><img src="/img/5bbaafb07c59e9abe68229aeb9d696b1.webp" alt="Paid social test: Value prop, Discount vs. gift with purchase"></div></figure>
+<figure class="test"><figcaption class="cap"><span class="k">Test 2 of 8 · Split test</span><span class="v">Colorful vs. moody, romantic vs. playful</span></figcaption><div class="shot"><img src="/img/9d666c9eb0b1645b8b152221408f68f9.webp" alt="Paid social test: Split test, Colorful vs. moody, romantic vs. playful" loading="lazy"></div></figure>
+<figure class="test"><figcaption class="cap"><span class="k">Test 3 of 8 · Gown styles</span><span class="v">Velvet vs. patterned</span></figcaption><div class="shot"><img src="/img/4f1c9231bfed631c7ad5302ace75e52d.webp" alt="Paid social test: Gown styles, Velvet vs. patterned" loading="lazy"></div></figure>
+<figure class="test"><figcaption class="cap"><span class="k">Test 4 of 8 · Gown styles</span><span class="v">Classic vs. appliqué</span></figcaption><div class="shot"><img src="/img/c90fb7e5fbe1becb2b236285b2b170e7.webp" alt="Paid social test: Gown styles, Classic vs. appliqué" loading="lazy"></div></figure>
+<figure class="test"><figcaption class="cap"><span class="k">Test 5 of 8 · Messaging hooks</span><span class="v">Time sensitivity vs. sale announcement</span></figcaption><div class="shot"><img src="/img/ed7fd80d5dbf60a134703f9c0d005cf2.webp" alt="Paid social test: Messaging hooks, Time sensitivity vs. sale announcement" loading="lazy"></div></figure>
+<figure class="test"><figcaption class="cap"><span class="k">Test 6 of 8 · Gown styles</span><span class="v">Dress vs. alternate dress</span></figcaption><div class="shot"><img src="/img/42f65bd981279534c408cd8bca1dcd7c.webp" alt="Paid social test: Gown styles, Dress vs. alternate dress" loading="lazy"></div></figure>
+<figure class="test"><figcaption class="cap"><span class="k">Test 7 of 8 · Color stories</span><span class="v">Bold and bright vs. muted jewel tones</span></figcaption><div class="shot"><img src="/img/abbc72d6f1490790b8d3cd23f2677f78.webp" alt="Paid social test: Color stories, Bold and bright vs. muted jewel tones" loading="lazy"></div></figure>
+<figure class="test"><figcaption class="cap"><span class="k">Test 8 of 8 · Visual hooks</span><span class="v">Free e-book vs. showroom preview</span></figcaption><div class="shot"><img src="/img/e7f5f77a50214b4a73251225082f577d.webp" alt="Paid social test: Visual hooks, Free e-book vs. showroom preview" loading="lazy"></div></figure>
+</div>
+<div class="dots-host"></div>
+</div>
+</div>
+</section>
+
+<section class="sec reach">
+<h2 class="h-section">The reach</h2>
+<div class="cols3">
+<div class="stat"><span class="num">250K</span><span class="cap">email subscribers reached by the system</span></div>
+<div class="stat"><span class="num">200K</span><span class="cap">social followers across channels</span></div>
+<div class="stat"><span class="num">3</span><span class="cap">sub-brands, each distinct but unmistakably Brideside</span></div>
+</div>
+</section>
+
+<a class="next" href="/design-roots/">
+<span class="lbl"><span class="eyebrow">Next</span><span class="title">Design Roots</span></span>
+<span class="arrow" aria-hidden="true">&rarr;</span>
+</a>
+</main>
+
+<footer class="footer" id="contact">
+<span class="big">Let's talk.</span>
+<div class="links">
+<a href="mailto:wdsmith1122@gmail.com">wdsmith1122@gmail.com</a>
+<a href="https://www.linkedin.com/in/whitneydsmith1" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://docs.google.com/document/d/1M2qHuFPSoKueWIUL6fcHE2FIn6Q889Xtm_iDmG9Anfg/export?format=pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+</div>
+</footer>
+
+</div>
+<script src="/site.js" defer></script>
+</body>
+</html>

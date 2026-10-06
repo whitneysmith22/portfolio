@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fetch Email, Rebuilt · Whitney Delyse Smith</title>
+<meta name="description" content="How Whitney Delyse Smith turned Fetch email from a hero image and a wall of text into a modular, editorial system, then built the monthly Creative Recap that kept it getting better.">
+<meta property="og:title" content="Fetch Email, Rebuilt · Whitney Delyse Smith">
+<meta property="og:description" content="I turned email into a real marketing channel, then built the monthly habit that kept it getting better.">
+<meta property="og:image" content="https://whitneydelyse.com/img/64aa64cd17b05e166dabbc33adcb8d55.webp">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/archivo.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/site.css">
+<style>
+.top{padding-bottom:72px}
+.cs-head .h-hero{font-size:clamp(64px,13.9vw,200px)}
+.cs-head .dek{max-width:1020px}
+
+.sec{padding:112px var(--pad) 0}
+.sec.tight{padding-top:96px}
+.sec.stack{gap:32px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+.sec-head p{max-width:440px;font-size:17px;line-height:1.5}
+
+/* before / after */
+.ba{align-items:center}
+.wf{background:#EFE6E8;border-radius:var(--radius);padding:36px;display:flex;flex-direction:column;align-items:center;gap:20px}
+.wf .hand{font-size:28px;text-align:center}
+.mail{background:#fff;border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:12px;width:300px;max-width:100%;box-shadow:0 12px 28px rgba(58,15,18,.15)}
+.mail.mod{gap:10px}
+.mail .heroimg{height:170px;border-radius:4px;background:#C9C1C4;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#5A2A2E;text-align:center;padding:12px}
+.mail .ln{display:block;height:10px;border-radius:4px;background:#D9D2D4}
+.mail .one{align-self:flex-start;font-size:12px;font-weight:700;color:#5A2A2E;text-decoration:underline}
+.mail .m{border-radius:4px;color:var(--ox);display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 14px;font-size:13px;font-weight:700}
+.mail .m .c{background:var(--ox);color:var(--cream);border-radius:999px;padding:4px 10px;font-size:11px;flex:none}
+.mail .m.dark{background:var(--ox);color:var(--cream)}
+.mail .m.dark .c{background:var(--cream);color:var(--ox)}
+.ba-arrow{display:flex;justify-content:center;font-size:72px}
+
+/* cards */
+.pcard{background:#fff;border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;gap:10px}
+.pcard .n{font-weight:900;font-stretch:62%;font-size:48px;line-height:.9;color:var(--rose)}
+.pcard .t{font-weight:900;font-stretch:75%;font-size:26px;line-height:1;text-transform:uppercase}
+.pcard .d{font-size:15px;line-height:1.5}
+.ocard{background:var(--cream);border-radius:var(--radius);padding:30px;display:flex;flex-direction:column;gap:12px}
+.ocard .t{font-weight:900;font-stretch:75%;font-size:30px;line-height:1;text-transform:uppercase}
+.ocard .d{font-size:16px;line-height:1.55}
+
+.wall{width:100%;height:auto;border-radius:10px;box-shadow:0 18px 40px rgba(58,15,18,.18)}
+
+.band{background:var(--ox);color:var(--cream);border-radius:var(--radius);padding:48px;align-items:center}
+.band .num{font-weight:900;font-stretch:62%;font-size:clamp(80px,8.3vw,120px);line-height:.9;color:var(--gold)}
+
+/* recap */
+.recap{margin-top:112px;background:var(--ox);color:var(--cream);padding:96px var(--pad);display:flex;flex-direction:column;gap:48px}
+.recap-head{gap:40px;align-items:end}
+.recap-head .eb{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--pink)}
+.recap-head h2{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(48px,6.1vw,88px);line-height:.95;color:var(--gold)}
+.recap-head p{font-size:19px;line-height:1.55;color:var(--sand)}
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
+.steps>div{border-left:2px solid #C99AA6;padding:4px 0 4px 20px;display:flex;flex-direction:column;gap:12px}
+.steps .n{font-weight:900;font-size:15px;color:var(--pink)}
+.steps .n.last{color:var(--gold)}
+.steps .t{font-weight:900;font-stretch:75%;font-size:28px;line-height:1;text-transform:uppercase;color:var(--cream)}
+.steps .d{font-size:15px;line-height:1.5;color:var(--sand)}
+.fan{display:flex;max-width:1300px;margin-top:16px;padding:10px 0 50px}
+.fan img{width:29.23%;flex:none;height:auto;aspect-ratio:380/214;object-fit:cover;border-radius:8px;box-shadow:0 18px 36px rgba(0,0,0,.4)}
+.fan img+img{margin-left:-11.54%}
+.fan img:nth-child(1){transform:translateY(18.7%) rotate(-8deg)}
+.fan img:nth-child(2){transform:translateY(4.7%) rotate(-3deg)}
+.fan img:nth-child(3){transform:translateY(21.5%) rotate(2deg)}
+.fan img:nth-child(4){transform:translateY(6.5%) rotate(6deg)}
+.fan img:nth-child(5){transform:translateY(23.4%) rotate(-4deg)}
+
+@media (max-width:1024px){
+  .steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:36px}
+  .wf{padding:28px 20px}
+}
+@media (max-width:900px){
+  .sec-head{flex-direction:column;align-items:flex-start;gap:16px}
+  .ba-arrow{font-size:56px;line-height:1;transform:rotate(90deg)}
+  .ba{justify-items:center}
+  .ba>.wf{width:100%;max-width:520px}
+}
+@media (max-width:900px) and (min-width:761px){.outs{grid-template-columns:repeat(3,minmax(0,1fr))}.ocard{padding:24px}.ocard .t{font-size:26px}}
+@media (max-width:760px){
+  .outs{grid-template-columns:minmax(0,1fr)}
+  .top{padding-bottom:48px}
+  .sec{padding-top:72px}
+  .sec.tight{padding-top:64px}
+  .cols3.single{grid-template-columns:minmax(0,1fr)}
+  .band{padding:28px;gap:12px}
+  .band .body-lg{font-size:18px}
+  .recap{margin-top:72px;padding:64px var(--pad);gap:36px}
+  .recap-head{gap:16px}
+  .recap-head p{font-size:17px}
+  .steps{grid-template-columns:minmax(0,1fr);gap:24px}
+  .steps .t{font-size:24px}
+  .fan{flex-wrap:wrap;justify-content:center;gap:16px;padding:0}
+  .fan img{width:calc(50% - 8px)}
+  .fan img+img{margin-left:0}
+  .fan img:nth-child(odd){transform:rotate(-2deg)}
+  .fan img:nth-child(even){transform:rotate(2deg)}
+  .pcard,.ocard{padding:24px}
+  .pcard .t{font-size:24px}
+  .ocard .t{font-size:26px}
+  .wf .hand{font-size:24px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="page">
+
+<header class="top">
+<nav class="nav" aria-label="Main">
+<a class="brand" href="/">Whitney Delyse</a>
+<div class="links">
+<a href="/#work">Work</a>
+<a href="/about/">About</a>
+<a href="https://flipsidebywhit.substack.com" target="_blank" rel="noopener">Substack</a>
+<a class="cta" href="#contact">Let's talk</a>
+</div>
+</nav>
+<div class="cs-head">
+<a class="back" href="/">&larr; All work</a>
+<div class="tags"><span class="pill">Email Strategy</span><span class="pill">Modular Design System</span><span class="pill">Creative Ops</span></div>
+<h1 class="h-hero">Fetch Email,<br>Rebuilt</h1>
+<p class="dek">When I started, a Fetch email was a hero image and a wall of text that read like a Word doc. I turned email into a real marketing channel, then built the monthly habit that kept it getting better.</p>
+</div>
+<div class="meta">
+<div><span class="label">Client</span><span>Fetch</span></div>
+<div><span class="label">My role</span><span>Email creative strategy and design</span></div>
+<div><span class="label">Channels</span><span>Email, push, in-app</span></div>
+<div><span class="label">Years</span><span>2021–2025</span></div>
+</div>
+</header>
+
+<main id="main">
+<section class="sec g12">
+<div class="s4"><h2 class="h-section">The challenge</h2></div>
+<p class="s7 body-lg">Every email followed the same recipe: design one hero image with a headline, make a tall version for mobile and a wide one for desktop, then paste the rest of the message in as live text. There were no email best practices in place, one link per send, and nothing that treated email as a channel worth investing in.</p>
+</section>
+
+<section class="sec tight g12 ba" aria-label="Before and after">
+<div class="s5 wf"><span class="eyebrow">Before</span><div class="mail"><span class="heroimg">Hero image + headline<br>(made twice: tall and wide)</span><span class="ln" style="width:100%"></span><span class="ln" style="width:92%"></span><span class="ln" style="width:97%"></span><span class="ln" style="width:60%"></span><span class="ln" style="width:100%"></span><span class="ln" style="width:88%"></span><span class="ln" style="width:95%"></span><span class="ln" style="width:70%"></span><span class="ln" style="width:100%"></span><span class="ln" style="width:40%"></span><span class="one">one link</span></div><span class="hand">a flyer and a Word doc</span></div>
+<div class="s2 ba-arrow" aria-hidden="true">&rarr;</div>
+<div class="s5 wf"><span class="eyebrow">After</span><div class="mail mod"><span class="m" style="height:70px;background:var(--pink)"><span>Hero + CTA</span><span class="c">CTA</span></span><span class="m" style="height:64px;background:var(--gold)"><span>Offer module · image + CTA</span><span class="c">CTA</span></span><span class="m" style="height:64px;background:#BFD9EE"><span>Offer carousel · 3 cards, 3 links</span><span class="c">CTA</span></span><span class="m" style="height:54px;background:var(--lime)"><span>Game / feature module</span><span class="c">CTA</span></span><span class="m dark" style="height:48px"><span>Referral module</span><span class="c">CTA</span></span></div><span class="hand">a story, built from modules</span></div>
+</section>
+
+<section class="sec stack">
+<div class="sec-head"><h2 class="h-section">What I brought in</h2><p>Email marketing best practices that weren't in place, turned into a system the whole team could build with.</p></div>
+<div class="cols3">
+<div class="pcard"><span class="n">01</span><span class="t">Modular templates</span><span class="d">A library of interchangeable modules, so every send is assembled, not designed from scratch.</span></div>
+<div class="pcard"><span class="n">02</span><span class="t">Editorialized storytelling</span><span class="d">Emails that read like content, with a narrative from header to footer instead of a flyer and a wall of text.</span></div>
+<div class="pcard"><span class="n">03</span><span class="t">Visuals through the body</span><span class="d">Imagery carries the story all the way down, not just in the hero.</span></div>
+<div class="pcard"><span class="n">04</span><span class="t">Many ways to click</span><span class="d">Every module links somewhere, so one email can drive to several offers and features.</span></div>
+<div class="pcard"><span class="n">05</span><span class="t">Scannable, mobile-first layouts</span><span class="d">F-pattern friendly structure and clear hierarchy for people reading on their phones.</span></div>
+<div class="pcard"><span class="n">06</span><span class="t">Mix and match to stay fresh</span><span class="d">Swappable versions of each module, so people who get the same flow repeatedly don't see the same email twice.</span></div>
+</div>
+</section>
+
+<section class="sec stack">
+<div class="sec-head"><h2 class="h-section">The system at work</h2><p>Welcome series, card launches, seasonal campaigns, partner takeovers and shopping moments, all from the same modular kit.</p></div>
+<img class="wall" src="/img/64aa64cd17b05e166dabbc33adcb8d55.webp" alt="Eleven Fetch emails built from the modular system" width="1200" height="1331" loading="lazy">
+</section>
+
+<section class="sec tight">
+<div class="band g12">
+<span class="s5 num">+600%</span>
+<span class="s7 body-lg" style="line-height:1.5">lift in email engagement once the modular system launched.</span>
+</div>
+</section>
+
+<section class="recap">
+<div class="g12 recap-head">
+<div class="s7 stack" style="gap:16px">
+<span class="eb">The operating rhythm</span>
+<h2>The monthly Creative Recap</h2>
+</div>
+<p class="s5">Every month I led a session reviewing everything we sent across email and other comms: what performed, what we learned, and what we'd change. It followed the same five-part path every time, moving the team from evidence to action.</p>
+</div>
+<div class="steps">
+<div><span class="n">01</span><span class="t">Standouts</span><span class="d">What worked, and what creative choices helped it work?</span></div>
+<div><span class="n">02</span><span class="t">Content analysis</span><span class="d">What patterns or friction showed up across the work?</span></div>
+<div><span class="n">03</span><span class="t">Competitive landscape</span><span class="d">What outside ideas could expand our playbook?</span></div>
+<div><span class="n">04</span><span class="t">Audience insights</span><span class="d">What human behavior should change our approach?</span></div>
+<div><span class="n last">05</span><span class="t">Creative strategies</span><span class="d">What will we keep, improve or test next month?</span></div>
+</div>
+<div class="fan">
+<img src="/img/966f3291cd32fc08100714403c1bc7c8.webp" alt="Creative Recap cover, April 2024" loading="lazy">
+<img src="/img/843c05ecd55d0a4cae978685e8b74d66.webp" alt="Creative Recap cover, June 2024" loading="lazy">
+<img src="/img/30a306dcf751a186f4eb9be12d4a53c1.webp" alt="Creative Recap cover, October 2024" loading="lazy">
+<img src="/img/45845a2c92a438732bf400dabc6639b9.webp" alt="Creative Recap cover, November 2024" loading="lazy">
+<img src="/img/c65da8274233c17ffee4c4dd888c27ef.webp" alt="Creative Recap cover, January 2025" loading="lazy">
+</div>
+</section>
+
+<section class="sec stack" style="padding-top:104px">
+<div class="sec-head"><h2 class="h-section">What came out of it</h2><p>A few of the changes that started as a recap takeaway and became part of the system.</p></div>
+<div class="cols3 outs">
+<div class="ocard"><span class="t">Mix and match</span><span class="d">Spotted people receiving the same flow several times in a short window. The fix: interchangeable versions of every module, which also opened up new testing.</span></div>
+<div class="ocard"><span class="t">Carousel restructure</span><span class="d">Rebuilt the offer carousel with a clear anatomy (eyebrow, headline, subhead, icon) so it was easier to scan and consistent everywhere it ran.</span></div>
+<div class="ocard"><span class="t">Onboarding refresh</span><span class="d">Reworked new-user comms around value first: why points matter, then how to earn them, then what to do next.</span></div>
+</div>
+</section>
+
+<a class="next" href="/brideside-bride/">
+<span class="stack" style="gap:8px"><span class="eyebrow">Next project</span><span class="title">Brideside BRIDE</span></span>
+<span class="arrow" aria-hidden="true">&rarr;</span>
+</a>
+</main>
+
+<footer class="footer" id="contact">
+<span class="big">Let's talk.</span>
+<div class="links">
+<a href="mailto:wdsmith1122@gmail.com">wdsmith1122@gmail.com</a>
+<a href="https://www.linkedin.com/in/whitneydsmith1" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://docs.google.com/document/d/1M2qHuFPSoKueWIUL6fcHE2FIn6Q889Xtm_iDmG9Anfg/export?format=pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+</div>
+</footer>
+
+</div>
+<script src="/site.js" defer></script>
+</body>
+</html>
