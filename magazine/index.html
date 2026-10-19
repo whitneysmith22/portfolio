@@ -935,7 +935,7 @@ a.nb:hover{transform:rotate(0) scale(1.04)}
 .r17 .ssw .t{font-size:11px;font-weight:600}
 
 /* ---------- phone ---------- */
-@media (max-width:899px), (max-height:520px){
+@media not all{
   .v{position:relative;inset:auto;display:flex;flex-direction:column;gap:16px;padding-block:24px 52px;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
   .v>*{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:auto!important;height:auto;transform:none}
   .v .v-folio{position:absolute!important;left:18px!important;right:18px!important;bottom:16px!important}
@@ -1097,7 +1097,7 @@ a.nb:hover{transform:rotate(0) scale(1.04)}
 .f5 .strip figure img{flex:none!important;height:170px!important;width:100%}
 
 /* ---------- phone / narrow: read as a scroll ---------- */
-@media (max-width:899px), (max-height:520px){
+@media not all{
   .app{display:block;padding:0}
   .viewport{display:block}
   .book{width:auto;height:auto;transform:none!important;perspective:none;display:flex;flex-direction:column;gap:0}
@@ -1222,6 +1222,17 @@ a.nb:hover{transform:rotate(0) scale(1.04)}
   .trophy .tt{flex-direction:column;gap:4px}.trophy .tt .label{text-align:left}
   .award{height:96px}.award b{font-size:15px;padding:0 6px}.award span{font-size:9px;padding:0 6px}
   .mast-top{font-size:13px}
+}
+
+/* ---------- phone: same page layouts, scaled to fit, stacked ---------- */
+@media (max-width:899px), (max-height:520px){
+  html,body{overflow-x:hidden}
+  .app{display:block;padding:0}
+  .viewport{display:block}
+  .bar,.hint{display:none}
+  .book{width:auto!important;height:auto!important;transform:none!important;margin:0!important;perspective:none;display:flex;flex-direction:column;align-items:flex-start;padding:8px 0 24px}
+  .pg,.pg.L,.pg.R{position:relative;left:auto;top:auto;flex:none;width:680px;height:880px;visibility:visible;transform:scale(var(--k,.5))!important;transform-origin:0 0;margin:0 calc(680px * (var(--k,.5) - 1)) calc(880px * (var(--k,.5) - 1) + 8px) 0;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+  .pg::after{display:none}
 }
 @media (prefers-reduced-motion:reduce){.pg.turn-out,.pg.turn-in{transition:none}}
 </style>
@@ -1773,8 +1784,8 @@ a.nb:hover{transform:rotate(0) scale(1.04)}
   function fit(){
     if(narrow.matches){
       book.style.transform='';
-      var cv=document.querySelector('.cover .stage'), w=document.querySelector('.cover').clientWidth;
-      if(cv) cv.style.transform='scale('+(w/680)+')';
+      var cv=document.querySelector('.cover .stage'); if(cv) cv.style.transform='';
+      document.documentElement.style.setProperty('--k',(document.documentElement.clientWidth/680).toFixed(4));
       return;
     }
     var cv2=document.querySelector('.cover .stage'); if(cv2) cv2.style.transform='';
