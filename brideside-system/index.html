@@ -55,6 +55,41 @@
 .typo .bold{font-weight:800;font-size:56px;letter-spacing:-.02em;text-shadow:4px 4px 0 #EAB6D3,8px 8px 0 #BDE3E4}
 .typo .hand{font-size:40px}
 
+/* brand book */
+.book{display:flex;flex-direction:column;gap:40px}
+.logos{display:flex;gap:64px;align-items:center;justify-content:center;background:#fff;border-radius:var(--radius);padding:40px}
+.logos img{height:clamp(60px,8vw,110px);width:auto}
+.logo-note{font-size:20px;line-height:1.55;max-width:820px}
+.logo-note em{font-family:var(--serif);font-size:26px;color:#0147AF}
+.worlds{gap:24px}
+.world{background:#fff;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.world .mood{width:100%;aspect-ratio:4/3;object-fit:cover}
+.world .pkg{width:100%;aspect-ratio:16/9;object-fit:cover;margin-top:auto}
+.wtxt{padding:28px 32px 32px;display:flex;flex-direction:column;gap:14px}
+.world h3{font-family:var(--serif);font-style:italic;font-weight:400;font-size:44px;line-height:1}
+.bride h3{color:#0147AF}.maid h3{color:#C73E4A}
+.world dl{margin:0;display:grid;grid-template-columns:120px 1fr;gap:8px 16px;font-size:16px;line-height:1.4}
+.world dt{font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+.world dd{margin:0}
+.wdots{display:flex;gap:8px;flex-wrap:wrap}
+.wdots i{width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.wdots i.ir{background:linear-gradient(135deg,#f9c6e0,#c7d8ff,#d9f7e8,#fde7b8)}
+.stat-img{width:100%;border-radius:var(--radius);aspect-ratio:16/7;object-fit:cover}
+/* voice */
+.voice{align-items:center}
+.vlead{font-size:19px;line-height:1.55;margin-top:20px}
+.vcard{gap:22px}
+.vcard .sl{display:grid;grid-template-columns:130px 1fr 130px;gap:16px;align-items:center;font-weight:700;font-size:15px}
+.vcard .sl span:last-child{text-align:right}
+.vcard .sl i{position:relative;height:2px;background:var(--ox)}
+.vcard .sl i::after{content:"";position:absolute;left:50%;top:-7px;height:16px;width:2px;background:var(--ox)}
+.vcard .sl b{position:absolute;top:-10px;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:#0147AF}
+.io{display:grid;grid-template-columns:1fr 1fr;gap:20px;border-top:1px solid #EADCE0;padding-top:22px;margin-top:6px}
+.io p{font-size:17px;line-height:1.45;margin-top:6px}
+.io div:first-child p{text-decoration:line-through;color:#9a8a8c}
+@media (max-width:900px){.logos{gap:28px;padding:28px}.world dl{grid-template-columns:100px 1fr}}
+@media (max-width:700px){.logos{flex-direction:column}.vcard .sl{grid-template-columns:86px 1fr 86px;font-size:13px}.io{grid-template-columns:1fr}.stat-img{aspect-ratio:4/3}}
+
 /* devices */
 .devices{display:flex;flex-direction:column;gap:32px}
 .dev{background:#fff;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
@@ -205,9 +240,9 @@
 </nav>
 <div class="cs-head">
 <a class="back" href="/">&larr; All work</a>
-<div class="tags"><span class="pill">Brand System</span><span class="pill">Email Design</span><span class="pill">Paid Social</span><span class="pill">Creative Testing</span></div>
+<div class="tags"><span class="pill">Brand Identity</span><span class="pill">Brand System</span><span class="pill">Email Design</span><span class="pill">Paid Social</span><span class="pill">Creative Testing</span></div>
 <h1 class="cs-title">Brideside:<br>Brand to System</h1>
-<p class="dek">I inherited a logo, a couple of typefaces and one blue. I left behind a system that made every email and ad look like the same brand.</p>
+<p class="dek">I inherited a logo, a couple of typefaces and one blue. I helped shape the brand, then built the system that made every email and ad look like the same brand.</p>
 </div>
 <div class="meta">
 <div><span class="label">Client</span><span>Brideside</span></div>
@@ -261,8 +296,48 @@
 </div>
 </section>
 
+<section class="sec book">
+<div class="sec-head"><h2 class="h-section">The brand book</h2><p class="w480">Branding &rsquo;19, the identity I helped develop with Brideside leadership and our agency partner when I joined. One brand, two worlds, each written like a moment from the wedding day.</p></div>
+<div class="logos"><img src="/img/bk-logo-maid.webp" alt="Brideside Bridesmaid logo lockup" loading="lazy"><img src="/img/bk-logo-bride.webp" alt="Brideside Bride logo lockup" loading="lazy"></div>
+<p class="logo-note">A contemporary take on a serif: thick and thins that curve instead of exaggerate. Elegant, with a slight edge. And one color story to own: <em>something blue</em>.</p>
+<div class="worlds g12">
+<article class="world s6 maid">
+<img class="mood" src="/img/bk-mood-maid.webp" alt="Brideside Bridesmaid mood board: blush interiors, iridescent glass and coral florals" loading="lazy">
+<div class="wtxt">
+<span class="eyebrow">Brideside Bridesmaid</span>
+<h3>The reception</h3>
+<dl><dt>Theme song</dt><dd>Lizzo, &ldquo;Good as Hell&rdquo;</dd><dt>Photography</dt><dd>A party with your girlfriends</dd><dt>Decor</dt><dd>A tasteful disco ball</dd><dt>Mood</dt><dd>Fun, playful, iridescent and neon</dd></dl>
+<div class="wdots"><i style="background:#F7EDE6"></i><i style="background:#D3DCEF"></i><i style="background:#E4D6E6"></i><i class="ir"></i><i style="background:#E3553C"></i><i style="background:#A9283A"></i><i style="background:#D06A86"></i><i style="background:#D8B866"></i></div>
+</div>
+<img class="pkg" src="/img/bk-bags-maid.webp" alt="Iridescent Brideside Bridesmaid shopping bags and box" loading="lazy">
+</article>
+<article class="world s6 bride">
+<img class="mood" src="/img/bk-mood-bride.webp" alt="Brideside Bride mood board: cobalt furniture, pampas florals and a Matisse cutout" loading="lazy">
+<div class="wtxt">
+<span class="eyebrow">Brideside Bride</span>
+<h3>Getting ready</h3>
+<dl><dt>Theme song</dt><dd>Maggie Rogers, &ldquo;Light On&rdquo;</dd><dt>Photography</dt><dd>Getting ready with friends</dd><dt>Decor</dt><dd>Chic, bright, crisp, celebratory</dd><dt>Mood</dt><dd>Robes and slippers, in a deep, courageous cobalt</dd></dl>
+<div class="wdots"><i style="background:#F7EDE6"></i><i style="background:#D3DCEF"></i><i style="background:#F2DCD8"></i><i style="background:#0D2A8A"></i><i style="background:#1B4FC4"></i><i style="background:#6E1A2C"></i><i style="background:#D8B866"></i></div>
+</div>
+<img class="pkg" src="/img/bk-bags-bride.webp" alt="White Brideside Bride shopping bags with cobalt ribbon" loading="lazy">
+</article>
+</div>
+<img class="stat-img" src="/img/bk-stationery.webp" alt="Brideside Bride business cards and appointment folder in cobalt and blush" loading="lazy">
+</section>
+
+<section class="sec g12 voice">
+<div class="s5"><h2 class="h-section">The voice</h2><p class="vlead">I helped write the marketing content style guide that every channel followed, from product pages and blog to email, social and ads. Friendly, confident, informative and reassuring, with levity the bridal industry usually skips.</p></div>
+<div class="s7 card vcard">
+<div class="sl"><span>Lighthearted</span><i><b style="left:38%"></b></i><span>Serious</span></div>
+<div class="sl"><span>Formal</span><i><b style="left:66%"></b></i><span>Casual</span></div>
+<div class="sl"><span>Respectful</span><i><b style="left:52%"></b></i><span>Irreverent</span></div>
+<div class="sl"><span>Helpful</span><i><b style="left:44%"></b></i><span>Aspirational</span></div>
+<div class="io"><div><span class="eyebrow">Instead of</span><p>Being a bridesmaid is expensive, stressful and time-consuming.</p></div><div><span class="eyebrow">Go for</span><p>Being a bridesmaid is a huge honor and a celebration of friendship.</p></div></div>
+</div>
+</section>
+
 <section class="sec devices">
-<div class="sec-head"><h2 class="h-section">The signature devices</h2><p>A small kit of repeatable moves. Any designer could combine them and still land on-brand.</p></div>
+<div class="sec-head"><h2 class="h-section">The signature devices</h2><p>Then I turned the brand into a marketing system: a small kit of repeatable moves. Any designer could combine them and still land on-brand.</p></div>
 <div class="cols3">
 <div class="dev"><div class="pic"><img src="/img/218eedd788f50a306431d02d1eac9dad.webp" alt="buy now, pay later headline with pastel shadow" loading="lazy"></div><div class="txt"><span class="t">Echo type</span><span class="d">Bold lowercase headlines with offset pastel shadows. Instantly recognizable, even as a thumbnail.</span></div></div>
 <div class="dev"><div class="pic"><img src="/img/6b126d79ac224852dc7ca78a43e764a7.webp" alt="we got you heading with gradient highlight" loading="lazy"></div><div class="txt"><span class="t">Highlighter bars</span><span class="d">The iridescent gradient, swiped under headings and buttons.</span></div></div>
