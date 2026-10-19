@@ -90,6 +90,22 @@
 @media (max-width:900px){.logos{gap:28px;padding:28px}.world dl{grid-template-columns:100px 1fr}}
 @media (max-width:700px){.logos{flex-direction:column}.vcard .sl{grid-template-columns:86px 1fr 86px;font-size:13px}.io{grid-template-columns:1fr}.stat-img{aspect-ratio:4/3}}
 
+/* poppy */
+.poppy{display:flex;flex-direction:column;gap:32px}
+.pp-top{gap:24px;align-items:stretch}
+.pp-glance{background:#B1251F;color:#fff;gap:18px}
+.ppg{display:grid;grid-template-columns:1fr 1fr;background:#fff;color:#B1251F;border-radius:8px}
+.ppg div{padding:16px 10px;text-align:center;font-size:14px;font-weight:600}
+.ppg div:nth-child(-n+2){border-bottom:1px solid #EBCFCD}.ppg div:nth-child(odd){border-right:1px solid #EBCFCD}
+.ppg b{display:block;font-family:var(--serif);font-size:44px;font-weight:400;line-height:1.05}
+.pp-voice{gap:10px;justify-content:center;background:#FBEAF1}
+.pl{font-size:clamp(26px,3vw,40px);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.pl em{font-family:var(--serif);font-weight:400;color:#D9628F}
+.pp-book{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.pp-book img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;box-shadow:0 8px 20px rgba(58,15,18,.14)}
+@media (max-width:900px){.pp-book{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:600px){.pp-book{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 /* devices */
 .devices{display:flex;flex-direction:column;gap:32px}
 .dev{background:#fff;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
@@ -246,7 +262,7 @@
 </div>
 <div class="meta">
 <div><span class="label">Client</span><span>Brideside</span></div>
-<div><span class="label">My role</span><span>Creative lead across three sub-brands</span></div>
+<div><span class="label">My role</span><span>Creative lead, brand and marketing</span></div>
 <div><span class="label">Channels</span><span>Email, Facebook, Instagram, Pinterest</span></div>
 <div><span class="label">Year</span><span>2019–2020</span></div>
 </div>
@@ -264,7 +280,7 @@
 <main id="main">
 <section class="sec g12 challenge">
 <div class="s4"><h2 class="h-section">The challenge</h2></div>
-<p class="s7">Brideside had loose brand guidelines: a logo, typefaces and one brand blue. With three expressions of the brand (Brideside, the Poppy sub-brand and the Brideside BRIDE bridal line), weekly sends and always-on paid social, there was nothing to keep the creative consistent or fast to produce.</p>
+<p class="s7">When I joined, Brideside was a bridesmaid company getting ready to launch into bridal, with loose guidelines: a logo, typefaces and one brand blue. The identity had to split into Brideside Bridesmaid and Brideside Bride, and with weekly sends and always-on paid social, there was nothing to keep the creative consistent or fast to produce.</p>
 </section>
 
 <section class="sec pal g12" aria-label="Brand palette">
@@ -334,6 +350,15 @@
 <div class="sl"><span>Helpful</span><i><b style="left:44%"></b></i><span>Aspirational</span></div>
 <div class="io"><div><span class="eyebrow">Instead of</span><p>Being a bridesmaid is expensive, stressful and time-consuming.</p></div><div><span class="eyebrow">Go for</span><p>Being a bridesmaid is a huge honor and a celebration of friendship.</p></div></div>
 </div>
+</section>
+
+<section class="sec poppy">
+<div class="sec-head"><h2 class="h-section">Poppy, from scratch</h2><p class="w480">Brideside&rsquo;s private labels already covered elevated bridesmaid styles with Aura and bridal gowns with Ellera. Poppy, the affordable bridesmaid line, came later, and I built it entirely on my own with no agency: the logo, color system, voice and style guide, then the lookbook, landing page, launch emails and social.</p></div>
+<div class="g12 pp-top">
+<div class="s4 card pp-glance"><span class="eyebrow">Poppy at a glance</span><div class="ppg"><div><b>13</b>classic colors</div><div><b>0&ndash;28</b>inclusive sizing</div><div><b>$99</b>midi styles</div><div><b>$109</b>long styles</div></div></div>
+<div class="s8 card pp-voice"><span class="eyebrow">The voice: affordable, never cheap</span><p class="pl">you want it, <em>you got it.</em></p><p class="pl">the limit <em>does not exist.</em></p><p class="pl">it&rsquo;s almost <em>too easy.</em></p></div>
+</div>
+<div class="pp-book"><img src="/img/pp-cover.webp" alt="Poppy lookbook cover" loading="lazy"><img src="/img/pp-youwant.webp" alt="Poppy lookbook: you want it, you got it" loading="lazy"><img src="/img/pp-glance.webp" alt="Poppy lookbook: at a glance" loading="lazy"><img src="/img/pp-colors.webp" alt="Poppy lookbook: the 13 colors" loading="lazy"><img src="/img/pp-limit.webp" alt="Poppy lookbook: the limit does not exist" loading="lazy"><img src="/img/pp-easy.webp" alt="Poppy lookbook: it's almost too easy" loading="lazy"></div>
 </section>
 
 <section class="sec devices">
