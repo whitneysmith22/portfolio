@@ -40,12 +40,12 @@
 .work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px 48px}
 .card{display:flex;flex-direction:column;gap:16px}
 .card h3,.wide h3{font-weight:900;font-stretch:75%;font-size:clamp(32px,3.2vw,46px);line-height:1;text-transform:uppercase;letter-spacing:-.01em}
-.card .img{width:100%;height:440px;object-fit:cover;border-radius:4px;box-shadow:0 14px 30px rgba(58,15,18,.2)}
+.card .img{width:100%;height:440px;object-fit:cover;border-radius:var(--radius);box-shadow:0 14px 30px rgba(58,15,18,.2)}
 .card a.imglink{display:block}
-.drop{margin-top:160px}
+.drop{margin-top:0}
 .wide{grid-column:span 2;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:48px;align-items:center}
 .wide .txt{grid-column:span 5;display:flex;flex-direction:column;gap:16px}
-.wide .pic{grid-column:span 7;height:440px;border-radius:4px;overflow:hidden;display:block;box-shadow:0 14px 30px rgba(58,15,18,.2)}
+.wide .pic{grid-column:span 7;height:440px;border-radius:var(--radius);overflow:hidden;display:block;box-shadow:0 14px 30px rgba(58,15,18,.2)}
 .wide .btn{align-self:flex-start}
 .mini-stage .stage-inner>img{width:220px;height:303px;object-fit:cover;object-position:50% 0;box-shadow:0 10px 24px rgba(0,0,0,.2)}
 .roots{margin-top:32px;background:var(--ox);color:var(--cream);border-radius:var(--radius);text-decoration:none;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:center;overflow:hidden}
@@ -56,7 +56,6 @@
 @media (max-width:1024px){
   .wide{gap:32px}
   .wide .txt{grid-column:span 6}.wide .pic{grid-column:span 6}
-  .drop{margin-top:96px}
 }
 @media (max-width:760px){
   #work{padding:56px var(--pad) 64px;gap:32px}
@@ -80,7 +79,7 @@
 
 <header class="top">
 <nav class="nav" aria-label="Main">
-<a class="brand" href="/">Whitney Delyse</a>
+<a class="brand" href="/">Whitney</a>
 <div class="links">
 <a href="#work">Work</a>
 <a href="/about/">About</a>
@@ -92,7 +91,7 @@
 <div class="hero">
 <div class="stage" data-w="1440" data-h="580" data-w-narrow="1300" data-h-narrow="580">
 <div class="stage-inner">
-<img src="/img/444eb10faf20f10f427ac9c7a64e5b83.webp" alt="Suki + Solaine lookbook spread" class="cut" style="left:430px;top:48px;width:270px;transform:rotate(-5deg)">
+<img src="/img/mag-allday.webp" alt="Suki + Solaine lookbook spread" class="cut" style="left:430px;top:48px;width:270px;transform:rotate(-5deg)">
 <div class="booklet" style="left:12px;top:196px;width:206px;height:206px;transform:rotate(-8deg)"><img src="/img/pp-cover.webp" alt="Poppy by Brideside lookbook cover"></div>
 <img src="/img/f5f2af0478725aa4eef057b6601c4afe.png" alt="Cutout of two models in Fetch Happened tees" class="cut" style="left:190px;top:114px;height:440px;max-width:none;transform:rotate(4deg)">
 <img src="/img/e10358fdbc56f5523f56ff898788fee0.webp" alt="Dana Rebecca Celeb-approved email featuring Lauren Conrad" class="card-shadow" style="left:488px;top:220px;width:180px;transform:rotate(-5deg)">
@@ -120,20 +119,19 @@
 <main>
 <section id="work">
 <div style="display:flex;align-items:baseline;gap:24px">
-<h2 class="h-big">Selected work</h2>
-<span class="eyebrow">(06)</span>
+<h2 class="h-section">Selected work</h2>
 </div>
 <div class="work-grid">
 
 <article class="card">
-<a class="imglink" href="/making-fetch-happen/" tabindex="-1" aria-hidden="true"><img class="img rot-l" src="/img/50a2e0c58c712f411a15035d5610bd7b.webp" alt="" style="object-position:50% 22%;background:var(--pink)" loading="lazy"></a>
+<a class="imglink" href="/making-fetch-happen/" tabindex="-1" aria-hidden="true"><img class="img" src="/img/50a2e0c58c712f411a15035d5610bd7b.webp" alt="" style="object-position:50% 22%;background:var(--pink)" loading="lazy"></a>
 <h3>Making Fetch Happen</h3>
 <p class="body">A rebrand built on "that's so fetch." Concept, script and co-direction for a campaign that hit 1M+ YouTube views in its first week.</p>
 <div class="tagrow"><div class="tags"><span class="pill">Brand Repositioning</span><span class="pill">Creative Direction</span></div><a class="btn" href="/making-fetch-happen/">View project</a></div>
 </article>
 
 <article class="card drop">
-<a class="imglink" href="/chewy-gift-guide/" tabindex="-1" aria-hidden="true"><img class="img rot-r" src="/img/7b4b87f917652694bda44891c0d646e3.webp" alt="" style="object-position:62% 50%" loading="lazy"></a>
+<a class="imglink" href="/chewy-gift-guide/" tabindex="-1" aria-hidden="true"><img class="img" src="/img/7b4b87f917652694bda44891c0d646e3.webp" alt="" style="object-position:62% 50%" loading="lazy"></a>
 <h3>Chewy Goodest Gift Guide</h3>
 <p class="body">Pet owners call their pets family, yet the dog rarely makes the holiday list. Influencer-style gift guides drove 54% of dog supplies sales in the campaign.</p>
 <div class="tagrow"><div class="tags"><span class="pill">Creative Strategy</span><span class="pill">Partnership Concepting</span></div><a class="btn" href="/chewy-gift-guide/">View project</a></div>
@@ -146,16 +144,16 @@
 <div class="tags"><span class="pill">Email Strategy</span><span class="pill">Creative Ops</span></div>
 <a class="btn" href="/fetch-email/">View project</a>
 </div>
-<a class="pic" href="/fetch-email/" tabindex="-1" aria-hidden="true" style="transform:rotate(1deg)"><img src="/img/64aa64cd17b05e166dabbc33adcb8d55.webp" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 0" loading="lazy"></a>
+<a class="pic" href="/fetch-email/" tabindex="-1" aria-hidden="true"><img src="/img/64aa64cd17b05e166dabbc33adcb8d55.webp" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 0" loading="lazy"></a>
 </article>
 
 <article class="wide">
-<a class="pic mini-stage" href="/brideside-system/" tabindex="-1" aria-hidden="true" style="background:#EAF0F5;transform:rotate(-1deg)">
+<a class="pic mini-stage" href="/brideside-system/" tabindex="-1" aria-hidden="true" style="background:#EAF0F5">
 <div class="stage" data-w="760" data-h="440" style="height:100%">
 <div class="stage-inner">
-<img src="/img/34ed9cff45be779c2169a8372ba43d58.webp" alt="" style="left:40px;top:36px;transform:rotate(-4deg)" loading="lazy">
-<img src="/img/1da2da8d241b5a6433d2bf955c11145b.webp" alt="" style="left:270px;top:70px;transform:rotate(3deg)" loading="lazy">
-<img src="/img/519c843fa3a79ad856d8524556626ea0.webp" alt="" style="left:500px;top:30px;transform:rotate(-2deg)" loading="lazy">
+<img src="/img/34ed9cff45be779c2169a8372ba43d58.webp" alt="" style="left:40px;top:36px" loading="lazy">
+<img src="/img/1da2da8d241b5a6433d2bf955c11145b.webp" alt="" style="left:270px;top:70px" loading="lazy">
+<img src="/img/519c843fa3a79ad856d8524556626ea0.webp" alt="" style="left:500px;top:30px" loading="lazy">
 </div>
 </div>
 </a>
@@ -168,14 +166,14 @@
 </article>
 
 <article class="card">
-<a class="imglink" href="/culture-to-commerce/" tabindex="-1" aria-hidden="true"><img class="img" src="/img/c0eb62f54182c34d6521df8a4551742c.webp" alt="" style="object-fit:contain;background:#0B0B0B;transform:rotate(1deg)" loading="lazy"></a>
+<a class="imglink" href="/culture-to-commerce/" tabindex="-1" aria-hidden="true"><img class="img" src="/img/c0eb62f54182c34d6521df8a4551742c.webp" alt="" style="object-fit:contain;background:#0B0B0B" loading="lazy"></a>
 <h3>Culture to Commerce</h3>
 <p class="body">Treating culture like a creative brief: trend-driven campaigns across CRM, social, blog and web, including Academy Rewards, which drove +200% app traffic from Instagram.</p>
 <div class="tagrow"><div class="tags"><span class="pill">Culture to Commerce</span><span class="pill">CRM + Social</span></div><a class="btn" href="/culture-to-commerce/">View project</a></div>
 </article>
 
 <article class="card drop">
-<a class="imglink" href="/brideside-bride/" tabindex="-1" aria-hidden="true"><img class="img rot-l" src="/img/cf546ed3ad93695551b9c2699a071a9a.webp" alt="" style="object-position:50% 0;background:#E6EAF2" loading="lazy"></a>
+<a class="imglink" href="/brideside-bride/" tabindex="-1" aria-hidden="true"><img class="img" src="/img/cf546ed3ad93695551b9c2699a071a9a.webp" alt="" style="object-position:50% 0;background:#E6EAF2" loading="lazy"></a>
 <h3>Brideside BRIDE</h3>
 <p class="body">Launching a bridal line with borrowed credibility: a Betches Brides partnership, a Micaela Erlanger capsule and designer trunk shows.</p>
 <div class="tagrow"><div class="tags"><span class="pill">Brand Launch</span><span class="pill">Partnership Strategy</span></div><a class="btn" href="/brideside-bride/">View project</a></div>
