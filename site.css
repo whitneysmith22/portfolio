@@ -191,6 +191,6 @@ a.next:hover .arrow{transform:translateX(8px)}
 /* spinning badge */
 .spin-badge{width:118px;height:118px;border-radius:50%;background:var(--cream);color:var(--coral);display:flex;align-items:center;justify-content:center}
 .spin-badge svg{width:100%;height:100%;animation:sb 18s linear infinite}
-.spin-badge text{font:700 11.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;fill:var(--coral)}
+.spin-badge text{font:700 10.5px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;fill:var(--coral)}
 @keyframes sb{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.spin-badge svg{animation:none}}
